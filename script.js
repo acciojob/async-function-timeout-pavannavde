@@ -22,6 +22,6 @@ async function main( delay,msg){
 		  setTimeout(()=>{
 			  resolve();
 		  },delay);
-		 output.innerText = msg; 
 	  })
+	 output.innerText = msg; 
 }
