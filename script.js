@@ -3,10 +3,9 @@
  let output =document.getElementById("output");
 let form = document.getElementById("btn");
   const msg=document.getElementById("text").value;
-const delay=Number(document.getElementById("delay").value);
-form.addEventListner("click",(e)=>{
+const delay=document.getElementById("delay").value;
+form.addEventListener("click",(e)=>{
 	e.preventdefault();
-
 	async function main(delay){
 
 	  await new Promise((resolve)=>{
