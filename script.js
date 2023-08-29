@@ -5,7 +5,7 @@ let form = document.getElementById("btn");
   const msg=document.getElementById("text").value;
 const delay=document.getElementById("delay").value;
 form.addEventListener("click",(e)=>{
-	e.preventdefault();
+	e.preventDefault();
 	async function main(delay){
 
 	  await new Promise((resolve)=>{
