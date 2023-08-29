@@ -6,14 +6,16 @@ let form = document.getElementById("btn");
 let delay =document.getElementById("delay").value;
 form.addEventListener("click",(e)=>{
 	e.preventDefault();
-	async function main(){
+	main(delay,msg);
+	
+})
+  
+async function main( delay,msg){
 
 	  await new Promise((resolve)=>{
 		  setTimeout(()=>{
 			  resolve();
 		  },delay);
-		 output.innerText="msg"; 
+		 output.innerText = msg; 
 	  })
-	}
-})
-  
+}
